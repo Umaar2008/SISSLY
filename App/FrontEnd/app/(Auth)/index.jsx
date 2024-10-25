@@ -1,31 +1,36 @@
-import { StyleSheet, Text, View, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, ImageBackground , Image } from 'react-native';
 import React from 'react';
-// Remove Animated import if not using animations
+import SplashScreen from '/Sissly/App/FrontEnd/components/SplashScreen';
 
-// Adjust the image path according to your project structure
 
 const Index = () => {
   return (
-    <ImageBackground source={require('/Sissly/App/FrontEnd/assets/images/LandingPageBackgorundImage')}
->
 
-      <View style={styles.container}>
-        <Text>lol</Text>
-      </View>
-    </ImageBackground>
+    
+<SplashScreen>
+
+</SplashScreen>
   );
 };
 
 export default Index;
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: 'rgba(255, 255, 255, 0.8)', // Example: semi-transparent background
-    padding: 20,
-    borderRadius: 10,
+  container :{
+width : "100%" ,
+height : "100%" ,
+display : "flex" ,
+flexDirection : "column" ,
+justifyContent : "center" ,
+alignItems : "center" ,
+    backgroundColor : "white" ,
+flex : 1 ,
+
   },
-  image: {
-    flex: 1,
-    justifyContent: 'center',
-  },
+  logo : {
+    width : 153 ,
+    height : 123 ,
+  }
+
+
 });
